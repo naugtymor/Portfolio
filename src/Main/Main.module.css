@@ -1,3 +1,26 @@
-.main {
-    border: 1px solid red;
+.mainBlock {
+    height: 100vh;
+    background-color: #e5b8d5;
+}
+
+.container {
+    border: 1px solid;
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    width: 600px;
+    height: 600px;
+    background-color: #0064a5;
+}
+
+.text {
+    width: 600px;
+    background-color: #0064a5;
 }
