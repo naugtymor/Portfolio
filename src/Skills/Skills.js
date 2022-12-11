@@ -1,5 +1,6 @@
 import style from "./Skills.module.css"
 import styleContainer from "../common/styles/Container.module.css"
+import Skill from "./Skill/Skill";
 
 const Skills = () => {
     return (
@@ -16,6 +17,9 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className={style.skills}>
+                    <Skill title={"Website Design"}/>
+                    <Skill title={"SEO Marketing"}/>
+                    <Skill title={"eCommerce"}/>
 
                 </div>
             </div>
