@@ -17,3 +17,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titleDescription {
+    max-width: 500px;
+}

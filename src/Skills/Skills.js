@@ -6,13 +6,14 @@ const Skills = () => {
     return (
         <div className={style.skillsBlock}>
             <div className={`${style.skillsContainer} ${styleContainer.container}`}>
-                <div>
+                <div className={style.title}>
                     <div>
                         <h6>SERVICES THAT I PROVIDE</h6>
                         <h1>Services</h1>
                     </div>
                     <div>
-                        <p>Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus
+                        <p className={style.titleDescription}>Phasellus et lacus suscipit congue nisl the volutpat
+                            magna. donec miss the drana risus
                             tincidunt convallis velit orci congue tortor </p>
                     </div>
                 </div>
@@ -20,7 +21,6 @@ const Skills = () => {
                     <Skill title={"Website Design"}/>
                     <Skill title={"SEO Marketing"}/>
                     <Skill title={"eCommerce"}/>
-
                 </div>
             </div>
         </div>
