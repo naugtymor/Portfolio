@@ -6,6 +6,7 @@ import About from "./About/About";
 import DistantWork from "./DistantWork/DistantWork";
 import SkillsList from "./SkillsList/SkillsList";
 import Projects from "./Projects/Projects";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   return (
@@ -13,10 +14,11 @@ const App = () => {
         <Header/>
         <Main/>
         <Skills/>
+        <Projects/>
         <About/>
         <DistantWork/>
         <SkillsList/>
-        <Projects/>
+        <Footer/>
     </div>
   );
 }

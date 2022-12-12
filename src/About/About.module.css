@@ -4,8 +4,6 @@
 }
 
 .aboutContainer {
-    border: 1px solid red;
-
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;

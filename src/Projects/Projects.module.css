@@ -1,6 +1,7 @@
 .projectsBlock {
     height: 100vh;
     background-color: #c2e2f3;
+    border: 1px solid;
 
     display: flex;
     flex-direction: column;
