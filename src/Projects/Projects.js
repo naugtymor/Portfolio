@@ -17,11 +17,11 @@ const Projects = () => {
                             ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare. </p>
                     </div>
                 </div>
-                {/*<div className={style.projects}>*/}
-                {/*    <Project/>*/}
-                {/*    <Project/>*/}
-                {/*    <Project/>*/}
-                {/*</div>*/}
+            </div>
+            <div className={style.projects}>
+                <Project/>
+                <Project/>
+                <Project/>
             </div>
         </div>
     )
