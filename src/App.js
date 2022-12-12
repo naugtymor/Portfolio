@@ -3,6 +3,7 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skills from "./Skills/Skills";
 import About from "./About/About";
+import DistantWork from "./DistantWork/DistantWork";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Main/>
         <Skills/>
         <About/>
+        <DistantWork/>
     </div>
   );
 }
