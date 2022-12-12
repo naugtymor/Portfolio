@@ -6,7 +6,7 @@
 .skillsContainer {
     align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .skills {
@@ -26,5 +26,5 @@
 }
 
 .titleDescription {
-    max-width: 500px;
+    max-width: 600px;
 }
