@@ -3,6 +3,10 @@
     background-color: #e5b8d5;
 }
 
+.mainContainer {
+    justify-content: flex-start;
+}
+
 .photo {
     width: 600px;
     height: 600px;
@@ -10,6 +14,17 @@
 }
 
 .text {
-    width: 600px;
+    /*position: absolute;*/
+    /*z-index: 99;*/
+    /*height: auto;*/
+    /*top: 40%;*/
+
+    width: 500px;
     background-color: #0064a5;
 }
+
+/*.body {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/

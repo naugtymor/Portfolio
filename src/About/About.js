@@ -12,11 +12,9 @@ const About = () => {
                 </div>
                 <div className={style.experience}>
                     <div className={style.info}>
-                        <p>Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant
-                            morbi senectus dictum.</p>
+                        <p>Pellentesque magna magna semper dapibus felis necatin aliuen risus. </p>
                         <p>
-                            Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant
-                            morbi tristique senectus the neuse malesuada nullam ac lorem miss the duru.</p>
+                            Web design magna magna semper dapibus felis necatin aliuen risus. </p>
                         <div>
                             info@gmail.com
                         </div>

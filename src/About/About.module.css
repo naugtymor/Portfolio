@@ -7,11 +7,12 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .progressBar {
-    width: 55%;
-    height: 280px;
+    width: 50%;
+    /*height: 280px;*/
     background-color: #0064a5;
 
     display: flex;
@@ -20,14 +21,18 @@
 }
 
 .experience {
+    /*border: 3px solid red;*/
     background-color: #c0e0f2;
     width: 100%;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .info {
-    width: 45%;
+    /*border: 3px solid red;*/
+    background-color: #7a1a81;
+    width: 50%;
 }
