@@ -7,6 +7,7 @@ import DistantWork from "./DistantWork/DistantWork";
 import SkillsList from "./SkillsList/SkillsList";
 import Projects from "./Projects/Projects";
 import Footer from "./Footer/Footer";
+import Contact from "./Contact/Contact";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <About/>
         <DistantWork/>
         <SkillsList/>
+        <Contact/>
         <Footer/>
     </div>
   );
