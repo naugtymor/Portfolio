@@ -1,6 +1,6 @@
 .contactBlock {
     height: 40vh;
-    background-color: #dfb5d2;
+    background-color: #bedef1;
 }
 
 .contactContainer {
@@ -19,14 +19,14 @@
     width: 50%;
     height: 70%;
 
-    background-color: #c0e0f2;
+    background-color: #dfb5d2;
 }
 
 .contactForm {
     width: 50%;
     height: 70%;
 
-    background-color: #c0e0f2;
+    background-color: #dfb5d2;
 }
 
 .itemContainer {
@@ -58,4 +58,9 @@
 textarea {
     height: 40%;
     width: 80%;
+}
+
+button {
+    width: 20%;
+    height: 10%;
 }

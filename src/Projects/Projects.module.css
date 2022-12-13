@@ -34,8 +34,10 @@
 .projects {
     border: 1px solid;
     width: 100%;
+    height: 60%;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }

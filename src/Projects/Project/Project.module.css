@@ -1,7 +1,5 @@
 .item {
-    width: 680px;
-    height: 680px;
-    /*width: 30%;*/
-    /*height: 30%;*/
+    width: 30%;
+    height: 80%;
     background-color: #0064a5;
 }
