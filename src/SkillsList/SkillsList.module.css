@@ -29,3 +29,10 @@
     height: 60px;
     background-color: #0063a5;
 }
+
+@media screen and (max-width: 375px) {
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -59,8 +59,18 @@ textarea {
     height: 40%;
     width: 80%;
 }
-
 button {
-    width: 20%;
-    height: 10%;
+    width: 70px;
+    height: 30px;
+}
+
+.contactData input, .contactData textarea {
+    width: 90%;
+}
+
+@media screen and (max-width: 1147px) {
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
 }

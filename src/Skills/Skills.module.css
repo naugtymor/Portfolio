@@ -1,5 +1,5 @@
 .skillsBlock {
-    height: 80vh;
+    /*height: 80vh;*/
     background-color: #c2e2f3;
 }
 
@@ -29,4 +29,11 @@
 
 .titleDescription {
     max-width: 600px;
+}
+
+@media screen and (max-width: 1199px) {
+    .skills {
+        justify-content: center;
+
+    }
 }
