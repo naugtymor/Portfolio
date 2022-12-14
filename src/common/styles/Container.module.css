@@ -8,5 +8,10 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
 }
+
+/*@media screen and (min-width: 575px){*/
+/*    .container {*/
+/*        !*width: 80%;*!*/
+/*    }*/
+/*}*/
