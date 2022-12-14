@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .projectsContainer {
@@ -21,7 +23,7 @@
 }
 
 .projects {
-    border: 1px solid;
+    /*border: 1px solid;*/
     width: 100%;
 
     display: flex;
@@ -29,8 +31,10 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1261px) {
+@media screen and (max-width: 1393px) {
     .projects {
-        justify-content: center;
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
     }
 }

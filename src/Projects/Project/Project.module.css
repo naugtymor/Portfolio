@@ -1,5 +1,24 @@
 .item {
-    width: 465px;
-    height: 465px;
-    background-color: #0064a5;
+    /*width: 465px;*/
+    /*height: 465px;*/
+    /*background-color: #0064a5;*/
+
+    width: 464px;
+    height: 464px;
+    /*margin-right: 15px;*/
+}
+
+.imgBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperImg {
+    /*background-color: #18191d;*/
+}
+
+.wrapperImg img {
+    width: 100%;
 }

@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <div className={style.projectsBlock}>
             <div className={style.projectsContainer}>
-               <Title/>
+               <Title mainTitle={"Portfolio"} secondTitle={"OUR WORKS"}/>
             </div>
             <div className={style.projects}>
                 <Project/>

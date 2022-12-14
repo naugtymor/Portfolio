@@ -4,8 +4,8 @@ const Title = (props) => {
     return (
         <div className={style.title}>
             <div className={style.mainTitle}>
-                <h6>MY WORKS</h6>
-                <h1>Portfolio</h1>
+                <h6>{props.secondTitle}</h6>
+                <h1>{props.mainTitle}</h1>
             </div>
             <div className={style.titleDescription}>
                 <p>Phasellus et lacus suscipit congue nisl the volutpat
