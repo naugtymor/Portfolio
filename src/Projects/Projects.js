@@ -1,4 +1,4 @@
-import style from "./Projects.module.css";
+import style from "./Projects.module.scss";
 import Project from "./Project/Project";
 import Title from "../common/components/Title/Title";
 import firstImage from "../assets/images/first.jpg";

@@ -1,0 +1,43 @@
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+    @media screen and (max-width: 919px){
+        justify-content: flex-start;
+    }
+    .mainTitle {
+        & h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 60px;
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: #18191d;
+        }
+        & h6 {
+            font-family: 'Syne', sans-serif;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 12px;
+            color: #868a9b;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+    .titleDescription {
+        max-width: 600px;
+        margin-top: 45px;
+        & p {
+            font-family: 'Syne', sans-serif;
+            font-size: 16px;
+            line-height: 1.75em;
+            margin: 0 0 0;
+            color: #868a9b;
+            font-weight: 400;
+        }
+    }
+}
