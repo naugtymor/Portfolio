@@ -1,3 +1,6 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
 .title {
     width: 100%;
     display: flex;
@@ -10,20 +13,14 @@
     }
     .mainTitle {
         & h1 {
-            font-family: 'Syne', sans-serif;
-            font-size: 60px;
+            @include text($fontFamily, 60px, 700, $textColor);
             line-height: 1.2em;
-            font-weight: 700;
             margin: 0;
-            color: #18191d;
         }
         & h6 {
-            font-family: 'Syne', sans-serif;
-            display: inline-block;
-            font-weight: 700;
-            font-size: 12px;
-            color: #868a9b;
+            @include text($fontFamily, 12px, 700, $textSecondColor);
             margin-bottom: 20px;
+            display: inline-block;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -32,12 +29,9 @@
         max-width: 600px;
         margin-top: 45px;
         & p {
-            font-family: 'Syne', sans-serif;
-            font-size: 16px;
+            @include text($fontFamily, 16px, 400, $textSecondColor);
             line-height: 1.75em;
             margin: 0 0 0;
-            color: #868a9b;
-            font-weight: 400;
         }
     }
 }

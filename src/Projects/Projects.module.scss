@@ -1,6 +1,7 @@
+@import "../common/styles/sass/variables";
 .projectsBlock {
   /*height: 100vh;*/
-  background-color: #f8f9fa;
+  background-color: $bgColor;
   border: 1px solid;
 
   display: flex;
