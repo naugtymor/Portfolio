@@ -1,0 +1,49 @@
+@import "../../common/styles/sass/mixins";
+@import "../../common/styles/sass/variables";
+
+.item {
+    width: 32.5%;
+    /*margin-right: 10px;*/
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .skill {
+        min-height: 210px;
+        padding: 60px 40px 90px 40px;
+        background-color: #FFF;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        & a {
+            text-decoration: none;
+            color: $textColor;
+            .icon {
+                width: 60px;
+                height: 60px;
+            }
+            & h5 {
+                @include text($fontFamily, 24px, 700, $textColor);
+                margin-bottom: 20px;
+                line-height: 1.25em;
+            }
+            & p {
+                @include text($fontFamily, 16px, 400, $textSecondColor);
+                line-height: 1.75em;
+                margin: 0 0 20px;
+            }
+            .numb {
+                font-size: 48px;
+                font-weight: 900;
+                position: absolute;
+                bottom: 40px;
+                right: 40px;
+                color: transparent;
+                -webkit-text-stroke: 1px rgba(0,0,0,0.3);
+                opacity: .6;
+            }
+        }
+    }
+}
