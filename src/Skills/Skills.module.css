@@ -22,7 +22,9 @@
 }
 @media screen and (max-width: 1199px) {
     .skills {
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
 
     }
 }
