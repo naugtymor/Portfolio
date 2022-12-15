@@ -5,9 +5,15 @@
     width: 40%;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1000px){
+        width: 100%
+    }
     & a {
         @include text($fontFamily, 20px, 700, $textColor);
         line-height: 1.25em;
         text-decoration: none;
+        @media screen and (max-width: 1000px){
+            @include text($fontFamily, 15px, 700, $textColor);
+        }
     }
 }
