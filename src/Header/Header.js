@@ -1,10 +1,15 @@
-import style from "./Header.module.css"
+import style from "./Header.module.scss"
 import Nav from "../Nav/Nav";
+import styleContainer from "../common/styles/Container.module.css";
+import logoImg from "../assets/images/logo.png"
+
 
 const Header = () => {
     return (
-        <div className={style.header}>
-            <Nav/>
+        <div className={style.headerBlock}>
+            <div className={`${style.headerContainer} ${styleContainer.container}`}>
+                <Nav/>
+            </div>
         </div>
     )
 }

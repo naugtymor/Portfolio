@@ -1,0 +1,13 @@
+@import "../common/styles/sass/mixins.scss";
+@import "../common/styles/sass/variables.scss";
+
+.nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    & a {
+        @include text($fontFamily, 20px, 700, $textColor);
+        line-height: 1.25em;
+        text-decoration: none;
+    }
+}
