@@ -30,6 +30,9 @@
                     text-shadow: 1px 1px #fff;
                     line-height: 1em;
                     margin: 0;
+                    @media screen and (max-width: 600px){
+                        @include text($fontFamily, 50px, 800, $textColor);
+                    }
                 }
             }
             & h6 {

@@ -4,3 +4,11 @@
   font-weight: $fontWeight;
   color: $color;
 }
+
+@mixin bar($width, $backgroundColor, $borderRadius, $position, $height) {
+  width: $width;
+  background-color: $backgroundColor;
+  border-radius: $borderRadius;
+  position: $position;
+  height: $height;
+}

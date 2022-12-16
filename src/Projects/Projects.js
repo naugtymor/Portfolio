@@ -10,7 +10,9 @@ const Projects = () => {
     return (
         <div className={style.projectsBlock}>
             <div className={style.projectsContainer}>
-               <Title mainTitle={"Portfolio"} secondTitle={"OUR WORKS"}/>
+               <Title mainTitle={"Portfolio"} secondTitle={"OUR WORKS"} description={'Phasellus et lacus suscipit congue nisl the volutpat\n' +
+                   '                    magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim\n' +
+                   '                    ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare. '}/>
             </div>
             <div className={style.projects}>
                 <Project image={firstImage}/>

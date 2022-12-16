@@ -16,6 +16,8 @@
             @include text($fontFamily, 60px, 700, $textColor);
             line-height: 1.2em;
             margin: 0;
+            max-width: 60%;
+
         }
         & h6 {
             @include text($fontFamily, 12px, 700, $textSecondColor);
