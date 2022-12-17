@@ -7,13 +7,17 @@
     .mainContainer {
         justify-content: space-around;
         border: none;
-        .photo {
+        @media screen and (max-width: 1374px){
+            justify-content: space-between;
+            min-height: 20vh;
+        }
+            .photo {
             width: 600px;
             height: 600px;
             /*background-color: #0064a5;*/
             @media screen and (max-width: 1374px){
-                width: 500px;
-                height: 500px;
+                width: 100%;
+                height: 20%;
             }
 
                 & img {
