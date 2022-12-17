@@ -1,0 +1,37 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.workBlock {
+    min-height: 20vh;
+    background-color: $bgSecondColor;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.workContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h2 {
+    @include text($fontFamily, 40px, 700, $bgColor);
+    line-height: 1.2em;
+}
+
+.button {
+    width: 120px;
+    height: 50px;
+    background-color: $bgColor;
+    //border-radius: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    @include text($fontFamily, 15px, 700, $textColor);
+    line-height: 1.2em;
+    text-decoration: none;
+}

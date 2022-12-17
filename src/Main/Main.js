@@ -11,14 +11,14 @@ const Main = () => {
                     </div>
                     <div className={style.text}>
                         <h1>
-                            <span>NILSA</span>
+                            <span>ZNAK</span>
                             <span> </span>
-                            <span>BROWN</span>
+                            <span>NIKITA</span>
                         </h1>
                         <h6>
-                            Creative Web & App Developer
+                            Front-end Developer
                         </h6>
-                        <span>Hi, I’m Nilsa Brown and I am creative web & app developer who dream making the world better.</span>
+                        <span>Hi, I’m Znak Nikita and I am front-end developer who dream making the world better.</span>
                     </div>
             </div>
         </div>

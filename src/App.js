@@ -18,9 +18,9 @@ const App = () => {
         <Projects/>
         <About/>
         <DistantWork/>
-        <SkillsList/>
-        <Contact/>
-        <Footer/>
+        {/*<SkillsList/>*/}
+        {/*<Contact/>*/}
+        {/*<Footer/>*/}
     </div>
   );
 }
