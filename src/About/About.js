@@ -17,26 +17,10 @@ const About = () => {
                             tristique senectus the neuse malesuada nullam ac lorem miss the duru.</p>
                     </div>
                     <div className={style.progressBar}>
-                        {/*<Bar title={'Design'} percent={'90%'} barClass={'barFillDesign'}/>*/}
-                        {/*<Bar title={'Branding'} percent={'80%'} barClass={'barFillBranding'}/>*/}
-                        {/*<Bar title={'Web Design'} percent={'95%'} barClass={'barFillWeb'}/>*/}
-                        {/*<Bar title={'Social Media'} percent={'85%'} barClass={'barFillMedia'}/>*/}
-                        <p className={style.barTitle}>Design <span>90%</span></p>
-                        <div className={style.bar}>
-                            <div className={style.barFillDesign}></div>
-                        </div>
-                        <p className={style.barTitle}>Branding <span>80%</span></p>
-                        <div className={style.bar}>
-                            <div className={style.barFillBranding}></div>
-                        </div>
-                        <p className={style.barTitle}>Web Design <span>95%</span></p>
-                        <div className={style.bar}>
-                            <div className={style.barFillMedia}></div>
-                        </div>
-                        <p className={style.barTitle}>Social Media <span>85%</span></p>
-                        <div className={style.bar}>
-                            <div className={style.barFillDesign}></div>
-                        </div>
+                        <Bar title={'Design'} percent={'90%'} barClass={'barFillDesign'}/>
+                        <Bar title={'Branding'} percent={'80%'} barClass={'barFillBranding'}/>
+                        <Bar title={'Web Design'} percent={'95%'} barClass={'barFillWeb'}/>
+                        <Bar title={'Social Media'} percent={'85%'} barClass={'barFillMedia'}/>
                     </div>
                 </div>
             </div>

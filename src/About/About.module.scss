@@ -45,41 +45,6 @@
         @media screen and (max-width: 650px) {
           width: 100%;
         }
-
-        .barTitle {
-          @include text($fontFamily, 16px, 700, $textColor);
-          position: relative;
-          line-height: 1.5em;
-          text-align: left;
-          margin: 0 0 5px 0;
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .bar {
-          position: relative;
-          background-color: #e6e7eb;
-          height: 6px;
-          margin: 0 0 30px 0;
-          border-radius: 10px;
-          display: block;
-
-          .barFillDesign {
-            @include bar(90%, #868a9b, 10px, absolute, 6px);
-          }
-
-          .barFillBranding {
-            @include bar(80%, #868a9b, 10px, absolute, 6px);
-          }
-
-          .barFillMedia {
-            @include bar(95%, #868a9b, 10px, absolute, 6px);
-          }
-
-          .barFillDesign {
-            @include bar(85%, #868a9b, 10px, absolute, 6px);
-          }
-        }
       }
     }
   }

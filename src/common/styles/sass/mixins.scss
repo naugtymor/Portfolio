@@ -5,8 +5,7 @@
   color: $color;
 }
 
-@mixin bar($width, $backgroundColor, $borderRadius, $position, $height) {
-  width: $width;
+@mixin bar($backgroundColor, $borderRadius, $position, $height) {
   background-color: $backgroundColor;
   border-radius: $borderRadius;
   position: $position;
