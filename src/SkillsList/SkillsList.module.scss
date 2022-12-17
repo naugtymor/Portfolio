@@ -1,0 +1,58 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.listBlock {
+    min-height: 20vh;
+    background-color: $bgSecondColor;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.listContainer {
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.title {
+    & h2 {
+        @include text($fontFamily, 40px, 700, $bgColor);
+        line-height: 1.2em;
+    }
+}
+
+.list {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icon {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    height: 40px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 40px;
+}
+
+.iconBlock {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+}
+
+@media screen and (max-width: 375px) {
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
