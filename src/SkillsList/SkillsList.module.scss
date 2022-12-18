@@ -6,6 +6,12 @@
     background-color: $bgSecondColor;
     padding-bottom: 60px;
     padding-top: 60px;
+    background-attachment: fixed;
+    //background-color: #303030;
+    background-image: url(../assets/images/banner.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     .listContainer {
         margin: 0 auto;
         flex-direction: column;
