@@ -2,7 +2,7 @@
 @import "../common/styles/sass/mixins";
 
 .mainBlock {
-    height: 100vh;
+    height: 80vh;
     background-color: #f8f9fa;
     .mainContainer {
         justify-content: space-around;
@@ -12,8 +12,8 @@
             min-height: 20vh;
         }
             .photo {
-            width: 600px;
-            height: 600px;
+            width: 500px;
+            height: 500px;
             /*background-color: #0064a5;*/
             @media screen and (max-width: 1374px){
                 width: 100%;

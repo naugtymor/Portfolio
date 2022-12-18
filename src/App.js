@@ -15,12 +15,12 @@ const App = () => {
         <Header/>
         <Main/>
         <Skills/>
-        <Projects/>
-        <DistantWork/>
         <About/>
+        <DistantWork/>
+        <Projects/>
         <SkillsList/>
-        <Contact/>
-        {/*<Footer/>*/}
+        {/*<Contact/>*/}
+        <Footer/>
     </div>
   );
 }

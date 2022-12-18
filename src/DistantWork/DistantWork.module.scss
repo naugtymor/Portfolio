@@ -2,7 +2,7 @@
 @import "../common/styles/sass/mixins";
 
 .workBlock {
-    height: 20vh;
+    minheight: 20vh;
     background-color: $bgSecondColor;
     padding-bottom: 60px;
     padding-top: 60px;
