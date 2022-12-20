@@ -17,10 +17,10 @@ const About = () => {
                             tristique senectus the neuse malesuada nullam ac lorem miss the duru.</p>
                     </div>
                     <div className={style.progressBar}>
-                        <Bar title={'Design'} percent={'90%'} barClass={'barFillDesign'}/>
-                        <Bar title={'Branding'} percent={'80%'} barClass={'barFillBranding'}/>
-                        <Bar title={'Web Design'} percent={'95%'} barClass={'barFillWeb'}/>
-                        <Bar title={'Social Media'} percent={'85%'} barClass={'barFillMedia'}/>
+                        <Bar title={'React'} percent={'90%'}/>
+                        <Bar title={'Rest API'} percent={'80%'}/>
+                        <Bar title={'JAVASCRIPT'} percent={'85%'}/>
+                        <Bar title={'HTML&CSS'} percent={'75%'}/>
                     </div>
                 </div>
             </div>
