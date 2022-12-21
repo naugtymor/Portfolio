@@ -9,41 +9,53 @@
     align-items: center;
   }
   .mainContainer {
+    width: 100%;
     justify-content: flex-start;
-    margin-left: 25%;
     border: none;
     @media screen and (max-width: 1374px){
       margin: 0 auto;
-      justify-content: space-between;
+      justify-content: center;
       min-height: 20vh;
-      height: 80vh;
     }
     .photo {
-      width: 600px;
+      width: 60%;
       height: 600px;
-      /*background-color: #0064a5;*/
+      display: flex;
+      justify-content: flex-end;
       @media screen and (max-width: 1374px){
-        width: 100%;
+        width: 90%;
         height: 40%;
       }
 
       & img {
         width: 100%;
         border-radius: 50%;
-        //position: relative;
-
       }
+
+      .imgContainer {
+        height: 100%;
+        width: 600px;
+      }
+
     }
     .text {
-      width: 400px;
-      @media screen and (min-width: 1374px){
-        position: absolute;
-        content: '';
-        left: 57%;
-        top: 30%;
+      width: 40%;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      @media screen and (max-width: 1374px){
+        width: 80%;
       }
-
-        //transform: translate(-50%, 50%);
+      .textContainer {
+        position: absolute;
+        top: -200px;
+        left: -100px;
+        content: '';
+        height: 100%;
+        @media screen and (max-width: 1374px){
+          position: unset;
+        }
+      }
       & h1 {
         & span {
           @include text($fontFamily, 70px, 800, $textColor);
