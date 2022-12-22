@@ -9,8 +9,17 @@
 
   & a {
     text-decoration: none;
+    &:hover {
+      & .icon {
+        //width: 45px;
+        //height: 45px;
+        font-size: 40px;
+      }
+    }
 
     & .icon {
+      transition: font-size 0.1s ease-in-out;
+
       display: flex;
       flex-direction: column;
       align-items: center;
