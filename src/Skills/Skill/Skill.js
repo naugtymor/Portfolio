@@ -5,7 +5,7 @@ const Skill = (props) => {
         <div className={style.item}>
             <div className={style.skill}>
                 <a href={''}>
-                    <span className={style.icon}></span>
+                    <div className={style.icon}>{props.icon}</div>
                     <h5>{props.title}</h5>
                     <p className={style.description}>Website ravida surna eveti semen the conse tusio anivite dianne one
                         nivam

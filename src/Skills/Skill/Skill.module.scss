@@ -7,6 +7,25 @@
     width: 100%;
     margin: 0 0 20px;
   }
+  &:hover {
+    .skill {
+      background-color: $bgSecondColor;
+      & a {
+        & h5 {
+          color: $whiteColor;
+        }
+        & p {
+          color: $whiteColor;
+        }
+        & .numb {
+          -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+        }
+        & .icon {
+          color: $whiteColor;
+        }
+      }
+    }
+  }
 
   .skill {
     min-height: 210px;
@@ -16,19 +35,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: background-color 0.6s ease-in-out;
 
     & a {
       text-decoration: none;
       color: $textColor;
 
       .icon {
-        width: 60px;
-        height: 60px;
+        color: $textColor;
+        font-size: 50px;
+        margin-bottom: 20px;
       }
 
       & h5 {
         @include text($fontFamily, 24px, 700, $textColor);
-        margin-bottom: 20px;
+        margin:0 0 20px;
         line-height: 1.25em;
       }
 
@@ -47,6 +68,8 @@
         color: transparent;
         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
         opacity: .6;
+        box-sizing: border-box;
+        display: block;
       }
     }
   }

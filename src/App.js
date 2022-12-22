@@ -9,18 +9,18 @@ import Projects from "./Projects/Projects";
 import Footer from "./Footer/Footer";
 
 const App = () => {
-  return (
-    <div className="App">
-        <Header/>
-        <Main/>
-        <Skills/>
-        <About/>
-        <DistantWork/>
-        <Projects/>
-        <SkillsList/>
-        <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+            <Skills/>
+            <About/>
+            <DistantWork/>
+            <Projects/>
+            <SkillsList/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
