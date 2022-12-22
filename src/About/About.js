@@ -11,10 +11,12 @@ const About = () => {
                 <Title mainTitle={'I Develop & Create Digital Future.'} secondTitle={'I MAKE THE FUTURE'}/>
                 <div className={style.experience}>
                     <div className={style.info}>
-                        <p>Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant
-                            morbi senectus dictum.</p>
-                        <p>Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi
-                            tristique senectus the neuse malesuada nullam ac lorem miss the duru.</p>
+                        <p>Hi! I am a front-end developer.
+                            Now I am improve my skills in this direction and expanding them with new technologies.
+                            I plan to further study the framework.
+                            In my spare time i solve CodeWars and improve my English.</p>
+                        <p>I have experience in creating SPA with React/Redux/TypeScript. Recently, I have been actively
+                            involved in the following areas like: React, Rest API, Javascript, HTML&CSS.</p>
                     </div>
                     <div className={style.progressBar}>
                         <Bar title={'React'} percent={'90%'}/>

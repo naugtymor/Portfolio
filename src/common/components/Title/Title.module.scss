@@ -2,38 +2,41 @@
 @import "../../styles/sass/mixins";
 
 .title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 45px;
-    @media screen and (max-width: 919px){
-        justify-content: flex-start;
-    }
-    .mainTitle {
-        & h1 {
-            @include text($fontFamily, 60px, 700, $textColor);
-            line-height: 1.2em;
-            margin: 0;
-            max-width: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  @media screen and (max-width: 919px) {
+    justify-content: flex-start;
+  }
 
-        }
-        & h6 {
-            @include text($fontFamily, 12px, 700, $textSecondColor);
-            margin-bottom: 20px;
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+  .mainTitle {
+    & h1 {
+      @include text($fontFamily, 60px, 700, $textColor);
+      line-height: 1.2em;
+      margin: 0;
+      max-width: 60%;
     }
-    .titleDescription {
-        max-width: 600px;
-        margin-top: 45px;
-        & p {
-            @include text($fontFamily, 16px, 400, $textSecondColor);
-            line-height: 1.75em;
-            margin: 0 0 0;
-        }
+
+    & h6 {
+      @include text($fontFamily, 12px, 700, $textSecondColor);
+      margin-bottom: 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
+  }
+
+  .titleDescription {
+    max-width: 600px;
+    margin-top: 45px;
+
+    & p {
+      @include text($fontFamily, 16px, 400, $textSecondColor);
+      line-height: 1.75em;
+      margin: 0 0 0;
+    }
+  }
 }

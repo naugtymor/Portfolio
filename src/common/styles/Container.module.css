@@ -1,5 +1,4 @@
 .container {
-    /*border: 1px solid;*/
     width: 80%;
     max-width: 1200px;
     height: 100%;
@@ -10,9 +9,3 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
-/*@media screen and (max-width: 1400px){*/
-/*    .container {*/
-/*        !*width: 80%;*!*/
-/*    }*/
-/*}*/

@@ -2,42 +2,46 @@
 @import "../common/styles/sass/mixins";
 
 .listBlock {
-    min-height: 20vh;
-    background-color: $bgSecondColor;
-    padding-bottom: 60px;
-    padding-top: 60px;
-    background-attachment: fixed;
-    //background-color: #303030;
-    background-image: url(../assets/images/banner.jpg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .listContainer {
-        margin: 0 auto;
-        flex-direction: column;
-        .title {
-            position: relative;
-            & h2 {
-                @include text($fontFamily, 40px, 700, $bgColor);
-                margin-top: 0;
-                line-height: 1.2em;
-            }
-            &::before {
-                position: absolute;
-                content: '';
-                background-color: $bgColor;
-                height: 1px;
-                width: 60%;
-                left: 50%;
-                bottom: 10px;
-                transform: translate(-50%, 50%);
-            }
-        }
-        .list {
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
+  min-height: 20vh;
+  background-color: $bgSecondColor;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-attachment: fixed;
+  background-image: url(../assets/images/banner.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .listContainer {
+    margin: 0 auto;
+    flex-direction: column;
+
+    .title {
+      position: relative;
+
+      & h2 {
+        @include text($fontFamily, 40px, 700, $bgColor);
+        margin-top: 0;
+        line-height: 1.2em;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: $bgColor;
+        height: 1px;
+        width: 60%;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%, 50%);
+      }
     }
+
+    .list {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
 }

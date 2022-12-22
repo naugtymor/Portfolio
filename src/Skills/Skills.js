@@ -11,9 +11,9 @@ const Skills = () => {
                     '                    magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim\n' +
                     '                    ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare. '}/>
                 <div className={style.skills}>
-                    <Skill title={"Website Design"} num={'01'}/>
-                    <Skill title={"SEO Marketing"} num={'02'}/>
-                    <Skill title={"eCommerce"} num={'03'}/>
+                    <Skill title={"WEB Development"} num={'01'}/>
+                    <Skill title={"Application Design"} num={'02'}/>
+                    <Skill title={"SPA maintenance"} num={'03'}/>
                 </div>
             </div>
         </div>

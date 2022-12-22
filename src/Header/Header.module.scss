@@ -1,6 +1,9 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
 .headerBlock {
     height: 80px;
-    background-color: #FFF;
+    background-color: $whiteColor;
     display: flex;
     align-items: center;
     .headerContainer {

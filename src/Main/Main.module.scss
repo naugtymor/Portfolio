@@ -3,26 +3,27 @@
 
 .mainBlock {
   height: 100vh;
-  background-color: #f8f9fa;
-  @media screen and (max-width: 1374px){
+  background-color: $bgColor;
+  @media screen and (max-width: $maxWidth) {
     display: flex;
     align-items: center;
   }
+
   .mainContainer {
     width: 100%;
     justify-content: flex-start;
-    border: none;
-    @media screen and (max-width: 1374px){
+    @media screen and (max-width: $maxWidth) {
       margin: 0 auto;
       justify-content: center;
       min-height: 20vh;
     }
+
     .photo {
       width: 60%;
       height: 600px;
       display: flex;
       justify-content: flex-end;
-      @media screen and (max-width: 1374px){
+      @media screen and (max-width: $maxWidth) {
         width: 90%;
         height: 40%;
       }
@@ -38,44 +39,49 @@
       }
 
     }
+
     .text {
       width: 40%;
       display: flex;
       justify-content: flex-start;
       position: relative;
-      @media screen and (max-width: 1374px){
+      @media screen and (max-width: $maxWidth) {
         width: 80%;
       }
+
       .textContainer {
         position: absolute;
         top: -200px;
         left: -100px;
         content: '';
         height: 100%;
-        @media screen and (max-width: 1374px){
+        @media screen and (max-width: $maxWidth) {
           position: unset;
         }
       }
+
       & h1 {
         & span {
           @include text($fontFamily, 70px, 800, $textColor);
-          text-shadow: 1px 1px #fff;
+          text-shadow: 1px 1px $whiteColor;
           line-height: 1em;
           margin: 0;
-          @media screen and (max-width: 600px){
+          @media screen and (max-width: 600px) {
             @include text($fontFamily, 50px, 800, $textColor);
           }
         }
       }
+
       & h6 {
         @include text($fontFamily, 14px, 700, $textColor);
         line-height: 1.25em;
-        //display: inline-block;
+        text-shadow: 0.5px 0.5px $whiteColor;
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 0;
         margin-top: 0;
       }
+
       & span {
         @include text($fontFamily, 16px, 400, $textSecondColor);
         line-height: 1.75em;
@@ -85,6 +91,7 @@
         margin-block-end: 1em;
         margin-inline-start: 0;
         margin-inline-end: 0;
+        max-width: 400px;
       }
     }
   }
