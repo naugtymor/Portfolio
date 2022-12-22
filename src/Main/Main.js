@@ -13,7 +13,7 @@ const Main = () => {
                         <img src={avatar} alt={"avatar"}/>
                     </div>
                 </div>
-                <Fade >
+                <Fade>
                     <div className={style.text}>
                         <div className={style.textContainer}>
                             <h1>
