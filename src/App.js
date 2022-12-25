@@ -9,13 +9,23 @@ import Projects from "./Projects/Projects";
 import Footer from "./Footer/Footer";
 import Modal from "./Modal/Modal";
 import {useState} from "react";
+import Snowfall from 'react-snowfall'
+
 
 
 const App = () => {
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(false);
 
     return (
         <div className="App">
+            <Snowfall
+                // The color of the snowflake, can be any valid CSS color.
+                color="#fff"
+                // Applied to the canvas element.
+                // style={{ background: '#fff' }}
+                // Controls the number of snowflakes that are created (defaults to 150).
+                snowflakeCount={200}
+            />
             <Header/>
             <Main/>
             <Skills/>
@@ -24,7 +34,7 @@ const App = () => {
             <Projects/>
             <SkillsList/>
             <Footer/>
-            <Modal active={modalActive} setActive={setModalActive}/>
+            {/*<Modal active={modalActive} setActive={setModalActive}/>*/}
         </div>
     );
 }
