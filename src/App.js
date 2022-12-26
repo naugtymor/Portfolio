@@ -16,8 +16,8 @@ const App = () => {
 
     return (
         <div className="App">
-            <Snowfall color="#868a9b" style={{ height: '110%' }} snowflakeCount={100}/>
-            <Header/>
+            <Snowfall color="#868a9b" style={{ height: '100%' }} snowflakeCount={100}/>
+            {/*<Header/>*/}
             <Main setActive={setModalActive}/>
             <Skills/>
             <About/>
