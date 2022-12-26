@@ -93,6 +93,32 @@
         margin-inline-end: 0;
         max-width: 400px;
       }
+
+      .button {
+        &:hover {
+          transform: scale(1.05);
+        }
+        transition: 0.1s ease-in-out;
+        position: absolute;
+        right: 35%;
+        width: 120px;
+        height: 50px;
+        border: 3px solid $textColor;
+        //background-color: $bgColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: $maxWidth) {
+          //position: unset;
+          position: center;
+        }
+
+        & a {
+          @include text($fontFamily, 15px, 700, $textColor);
+          line-height: 1.2em;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

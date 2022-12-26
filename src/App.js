@@ -19,12 +19,11 @@ const App = () => {
     return (
         <div className="App">
             <Snowfall
-                // The color of the snowflake, can be any valid CSS color.
-                color="#fff"
+                color="#868a9b"
                 // Applied to the canvas element.
-                // style={{ background: '#fff' }}
+                style={{ height: '110%' }}
                 // Controls the number of snowflakes that are created (defaults to 150).
-                snowflakeCount={200}
+                snowflakeCount={100}
             />
             <Header/>
             <Main/>

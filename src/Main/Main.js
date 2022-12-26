@@ -25,6 +25,9 @@ const Main = () => {
                                 Front-end Developer
                             </h6>
                             <span>Hi, I’m Znak Nikita and I am front-end developer who dream making the world better.</span>
+                            <div className={style.button}>
+                                <a href={''}>HIRE ME</a>
+                            </div>
                         </div>
                     </div>
                 </Fade>
