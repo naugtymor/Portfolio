@@ -4,7 +4,7 @@ import avatar from "../assets/images/avatar.jpg"
 import Fade from 'react-reveal/Fade';
 
 
-const Main = () => {
+const Main = (props) => {
     return (
         <div className={style.mainBlock}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
@@ -25,8 +25,8 @@ const Main = () => {
                                 Front-end Developer
                             </h6>
                             <span>Hi, I’m Znak Nikita and I am front-end developer who dream making the world better.</span>
-                            <div className={style.button}>
-                                <a href={''}>HIRE ME</a>
+                            <div className={style.button} onClick={() => props.setActive(true)}>
+                                <span>HIRE ME</span>
                             </div>
                         </div>
                     </div>

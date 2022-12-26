@@ -108,12 +108,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         @media screen and (max-width: $maxWidth) {
           //position: unset;
           position: center;
         }
 
-        & a {
+        & span {
           @include text($fontFamily, 15px, 700, $textColor);
           line-height: 1.2em;
           text-decoration: none;
