@@ -39,8 +39,7 @@
 
     .list {
       width: 100%;
-      display: flex;
-      justify-content: space-evenly;
+      @include flex(flex, row, flex-start, space-evenly);
       flex-wrap: wrap;
     }
   }

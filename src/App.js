@@ -8,7 +8,7 @@ import SkillsList from "./SkillsList/SkillsList";
 import Projects from "./Projects/Projects";
 import Footer from "./Footer/Footer";
 import Modal from "./Modal/Modal";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Snowfall from 'react-snowfall'
 
 const App = () => {

@@ -7,20 +7,15 @@
   padding-top: 60px;
 
   .skillsContainer {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(flex, column, center, center);
     flex-wrap: nowrap;
 
     .skills {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flex(flex, row, flex-start, space-between);
+
       @media screen and (max-width: $maxWidth) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, column, center, center);
       }
     }
   }

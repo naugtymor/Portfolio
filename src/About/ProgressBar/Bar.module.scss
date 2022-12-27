@@ -4,12 +4,11 @@
 .item {
   .barTitle {
     @include text($fontFamily, 16px, 700, $textColor);
+    @include flex(flex, row, flex-start, space-between);
     position: relative;
     line-height: 1.5em;
     text-align: left;
     margin: 0 0 5px 0;
-    display: flex;
-    justify-content: space-between;
   }
 
   .bar {

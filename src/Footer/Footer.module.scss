@@ -10,9 +10,7 @@
 
   .items {
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    @include flex(flex, row, flex-start, space-evenly);
     @media screen and (max-width: 500px) {
       flex-direction: column;
     }
@@ -40,9 +38,7 @@
       }
 
       .icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include flex(flex, row, flex-start, space-around);
         @media screen and (max-width: 500px) {
           justify-content: space-between;
         }

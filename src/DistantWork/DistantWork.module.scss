@@ -13,9 +13,7 @@
   background-size: cover;
 
   .workContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex(flex, column, center, center);
 
     .title {
       & h2 {
@@ -27,17 +25,15 @@
 
     .button {
       &:hover {
-          transform: scale(1.05);
+        transform: scale(1.05);
       }
+
       transition: 0.1s ease-in-out;
       width: 120px;
       height: 50px;
       background-color: $bgColor;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex(flex, row, center, center);
       cursor: pointer;
-
 
       & span {
         @include text($fontFamily, 15px, 700, $textColor);

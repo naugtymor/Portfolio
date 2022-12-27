@@ -29,6 +29,7 @@ const Main = (props) => {
                                 <span>HIRE ME</span>
                             </div>
                         </div>
+
                     </div>
                 </Fade>
             </div>

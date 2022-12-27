@@ -101,19 +101,16 @@
           transform: scale(1.05);
         }
         transition: 0.1s ease-in-out;
-        position: absolute;
-        right: 35%;
+        position: relative;
+        left: 35%;
         width: 120px;
         height: 50px;
         border: 3px solid $textColor;
         border-radius: 10px;
-        //background-color: $bgColor;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(flex, row, center, center);
         cursor: pointer;
         @media screen and (max-width: $maxWidth) {
-
+          left: 27%;
         }
 
         & span {

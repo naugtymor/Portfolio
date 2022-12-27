@@ -2,28 +2,21 @@
 @import "../../common/styles/sass/variables";
 
 .iconBlock {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @include flex(flex, column, center, flex-start);
   box-sizing: border-box;
 
   & a {
     text-decoration: none;
+
     &:hover {
       & .icon {
-        //width: 45px;
-        //height: 45px;
         font-size: 40px;
       }
     }
 
     & .icon {
       transition: font-size 0.1s ease-in-out;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flex(flex, column, center, center);
       font-size: 30px;
       height: 40px;
       width: 40px;

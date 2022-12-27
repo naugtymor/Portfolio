@@ -11,3 +11,10 @@
   position: $position;
   height: $height;
 }
+
+@mixin flex($display, $flexDirection, $alignItems, $justifyContent) {
+  display: $display;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
