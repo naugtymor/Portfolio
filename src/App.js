@@ -21,7 +21,7 @@ const App = () => {
             <Main setActive={setModalActive}/>
             <Skills/>
             <About/>
-            <DistantWork/>
+            <DistantWork setActive={setModalActive}/>
             <Projects/>
             <SkillsList />
             <Footer/>

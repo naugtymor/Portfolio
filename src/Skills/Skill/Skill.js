@@ -4,7 +4,7 @@ const Skill = (props) => {
     return (
         <div className={style.item}>
             <div className={style.skill}>
-                <a href={''}>
+                <span>
                     <div className={style.icon}>{props.icon}</div>
                     <h5>{props.title}</h5>
                     <p className={style.description}>Website ravida surna eveti semen the conse tusio anivite dianne one
@@ -13,7 +13,7 @@ const Skill = (props) => {
                         dictum.
                     </p>
                     <div className={style.numb}>{props.num}</div>
-                </a>
+                </span>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import style from "./DistantWork.module.scss"
 import styleContainer from "../common/styles/Container.module.css"
 
 
-const DistantWork = () => {
+const DistantWork = (props) => {
     return (
         <div className={style.workBlock}>
             <div className={styleContainer.container}>
@@ -10,8 +10,8 @@ const DistantWork = () => {
                     <div className={style.title}>
                         <h2>CONSIDERING REMOTE WORK OPTIONS</h2>
                     </div>
-                    <div className={style.button}>
-                        <a href={''}>HIRE ME</a>
+                    <div className={style.button} onClick={() => props.setActive(true)}>
+                        <span>HIRE ME</span>
                     </div>
                 </div>
             </div>
