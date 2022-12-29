@@ -1,15 +1,22 @@
 import style from "./Header.module.scss"
 import Nav from "../Nav/Nav";
 import styleContainer from "../common/styles/Container.module.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
     return (
         <div className={style.headerBlock}>
             <div className={`${style.headerContainer} ${styleContainer.container}`}>
-                <Nav/>
+                <div className={style.burgerButton}><GiHamburgerMenu/></div>
             </div>
         </div>
     )
 }
 
 export default Header;
+
+// <div className={style.headerBlock}>
+//     <div className={`${style.headerContainer} ${styleContainer.container}`}>
+//         <Nav/>
+//     </div>
+// </div>
