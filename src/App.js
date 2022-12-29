@@ -10,14 +10,16 @@ import Footer from "./Footer/Footer";
 import Modal from "./Modal/Modal";
 import {useState} from "react";
 import Snowfall from 'react-snowfall'
+import Nav from "./Nav/Nav";
 
 const App = () => {
     const [modalActive, setModalActive] = useState(false);
+    const [navActive, setNavActive] = useState(false);
 
     return (
         <div className="App">
             <Snowfall color="#868a9b" style={{ height: '100%' }} snowflakeCount={100}/>
-            <Header/>
+            <Header setActive={setNavActive}/>
             <Main setActive={setModalActive}/>
             <Skills/>
             <About/>
@@ -26,6 +28,7 @@ const App = () => {
             <SkillsList />
             <Footer/>
             {modalActive && <Modal setActive={setModalActive}/>}
+            {navActive && <Nav setActive={setNavActive}/>}
         </div>
     );
 }

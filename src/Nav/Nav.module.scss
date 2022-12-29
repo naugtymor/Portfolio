@@ -1,19 +1,21 @@
 @import "../common/styles/sass/mixins.scss";
 @import "../common/styles/sass/variables.scss";
 
-.nav {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 1000px){
-        width: 100%
-    }
-    & a {
-        @include text($fontFamily, 20px, 700, $textColor);
-        line-height: 1.25em;
-        text-decoration: none;
-        @media screen and (max-width: 1000px){
-            @include text($fontFamily, 15px, 700, $textColor);
+.navBlock {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include flex(flex, row, center, flex-end);
+    z-index: 100;
+    .nav {
+        width: 500px;
+        height: 100%;
+        background-color: $bgColor;
+        @media screen and (max-width: $maxWidth){
+            width: 100%;
         }
     }
 }
