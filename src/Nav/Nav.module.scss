@@ -6,16 +6,42 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
+    transition: background-color 1s ease-in-out;
     top: 0;
     left: 0;
     @include flex(flex, row, center, flex-end);
     z-index: 100;
     .nav {
+        position: relative;
         width: 500px;
         height: 100%;
         background-color: $bgColor;
+        @include flex(flex, column, center, center);
+        //padding-top: 100px;
         @media screen and (max-width: $maxWidth){
             width: 100%;
+        }
+        & h5 {
+            @include text($fontFamily, 24px, 700, $textColor);
+            margin:0 0 40px;
+            line-height: 1.25em;
+            cursor: pointer;
+        }
+        .closeButton {
+            top: 30px;
+            //right: 0;
+            cursor: pointer;
+            position: absolute;
+            @include flex(flex, column, center, center);
+            color: $bgColor;
+            font-size: 45px;
+            height: 40px;
+            margin-top: 20px;
+            width: 40px;
+            @media screen and (max-width: 375px) {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }
