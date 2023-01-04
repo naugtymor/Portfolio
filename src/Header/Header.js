@@ -13,7 +13,7 @@ const Header = (props) => {
         <div className={style.headerBlock}>
             <div className={`${style.headerContainer} ${styleContainer.container}`}>
                 <div className={style.burgerButton} onClick={() => props.setActive(!props.navActive)}>
-                    <div className={style.menu}>
+                    <div className={`${style.menu} ${props.navActive && style.active}`}>
 
                     </div>
                 </div>
