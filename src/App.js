@@ -19,7 +19,7 @@ const App = () => {
     return (
         <div className="App">
             <Snowfall color="#868a9b" style={{ height: '100%' }} snowflakeCount={100}/>
-            <Header setActive={setNavActive}/>
+            <Header setActive={setNavActive} navActive={navActive}/>
             <Main setActive={setModalActive}/>
             <Skills/>
             <About/>
@@ -28,7 +28,7 @@ const App = () => {
             <SkillsList />
             <Footer/>
             {modalActive && <Modal setActive={setModalActive}/>}
-            {navActive && <Nav setActive={setNavActive}/>}
+            {navActive && <Nav setActive={setNavActive} />}
         </div>
     );
 }
