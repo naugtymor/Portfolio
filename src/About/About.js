@@ -6,7 +6,7 @@ import Bar from "./ProgressBar/Bar";
 
 const About = () => {
     return (
-        <div className={style.aboutBlock}>
+        <div className={style.aboutBlock} id={'aboutMe'}>
             <div className={`${style.aboutContainer} ${styleContainer.container}`}>
                 <Title mainTitle={'I Develop & Create Digital Future.'} secondTitle={'I MAKE THE FUTURE'}/>
                 <div className={style.experience}>

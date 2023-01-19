@@ -24,7 +24,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id={'services'}>
             <div className={`${style.skillsContainer} ${styleContainer.container}`}>
                 <Title mainTitle={"Services"} secondTitle={"SERVICES THAT I PROVIDE"} description={'Phasellus et lacus suscipit congue nisl the volutpat\n' +
                     '                    magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim\n' +

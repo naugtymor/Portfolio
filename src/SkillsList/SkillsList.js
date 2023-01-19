@@ -50,7 +50,7 @@ const skills = [
 
 const SkillsList = () => {
     return (
-        <div className={style.listBlock}>
+        <div className={style.listBlock} id={'skills'}>
             <div className={`${styleContainer.container} ${style.listContainer}`}>
                 <div className={style.title}>
                     <h2>MY SKILLS</h2>

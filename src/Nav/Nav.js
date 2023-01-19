@@ -1,7 +1,6 @@
 import style from "./Nav.module.scss"
-import Slide from 'react-reveal/Slide';
-import { GrClose } from "react-icons/gr";
-
+import Slide from "react-reveal/Slide";
+import { Link } from "react-scroll"
 
 const Nav = (props) => {
     return (
@@ -9,12 +8,24 @@ const Nav = (props) => {
             <Slide right>
                 <div className={style.nav} onClick={e => e.stopPropagation()}>
                     {/*<div className={style.closeButton} onClick={() => props.setActive(false)}><GrClose/></div>*/}
-                    <h5>HOME</h5>
-                    <h5>SERVICES</h5>
-                    <h5>ABOUT ME</h5>
-                    <h5>FEEDBACK</h5>
-                    <h5>PORTFOLIO</h5>
-                    <h5>SKILLS</h5>
+                    <Link onClick={() => props.setActive(false)} activeClass={style.active} to={"main"} spy={true} smooth={true} offset={1} duration={1000}>
+                        HOME
+                    </Link>
+                    <Link onClick={() => props.setActive(false)} activeClass={style.active} to={"services"} spy={true} smooth={true} offset={1} duration={1000}>
+                        SERVICES
+                    </Link>
+                    <Link onClick={() => props.setActive(false)} activeClass={style.active} to={"aboutMe"} spy={true} smooth={true} offset={1} duration={1000}>
+                        ABOUT ME
+                    </Link>
+                    <Link onClick={() => props.setActive(false)} activeClass={style.active} to={"feedback"} spy={true} smooth={true} offset={1} duration={1000}>
+                        FEEDBACK
+                    </Link>
+                    <Link onClick={() => props.setActive(false)} activeClass={style.active} to={"projects"} spy={true} smooth={true} offset={1} duration={1000}>
+                        PORTFOLIO
+                    </Link>
+                    <Link onClick={() => props.setActive(false)} activeClass={style.active} to={"skills"} spy={true} smooth={true} offset={0} duration={500}>
+                        SKILLS
+                    </Link>
                 </div>
             </Slide>
         </div>

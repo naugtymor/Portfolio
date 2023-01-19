@@ -20,11 +20,12 @@
         @media screen and (max-width: $maxWidth){
             width: 100%;
         }
-        & h5 {
+        & a {
             @include text($fontFamily, 24px, 700, $textColor);
             margin:0 0 40px;
             line-height: 1.25em;
             cursor: pointer;
+            text-decoration: none;
         }
         .closeButton {
             top: 30px;

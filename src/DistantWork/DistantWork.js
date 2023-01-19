@@ -4,7 +4,7 @@ import styleContainer from "../common/styles/Container.module.css"
 
 const DistantWork = (props) => {
     return (
-        <div className={style.workBlock}>
+        <div className={style.workBlock} id={'feedback'}>
             <div className={styleContainer.container}>
                 <div className={style.workContainer}>
                     <div className={style.title}>

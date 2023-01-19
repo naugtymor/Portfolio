@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 const Main = (props) => {
     return (
-        <div className={style.mainBlock}>
+        <div className={style.mainBlock} id={'main'}>
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <div className={style.photo}>
                     <div className={style.imgContainer}>

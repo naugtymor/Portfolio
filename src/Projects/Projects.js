@@ -7,7 +7,7 @@ import thirdImage from "../assets/images/third.jpg";
 
 const Projects = () => {
     return (
-        <div className={style.projectsBlock}>
+        <div className={style.projectsBlock} id={'projects'}>
             <div className={style.projectsContainer}>
                <Title mainTitle={"Portfolio"} secondTitle={"OUR WORKS"} description={'Here you can see the projects I have been working on since I started learning how to create a SPA.'}/>
             </div>
