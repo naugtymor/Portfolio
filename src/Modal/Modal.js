@@ -2,6 +2,9 @@ import style from "./Modal.module.scss"
 import Fade from 'react-reveal/Fade';
 
 const Modal = (props) => {
+
+
+
     return (
         <div className={style.modalBlock} onClick={() => props.setActive(false)}>
             <Fade top>
