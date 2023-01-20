@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   @include flex(flex, row, center, center);
+  z-index: 11;
 
   .modalContent {
     width: 800px;
@@ -59,6 +60,18 @@
       flex-wrap: wrap;
       //height: 320px;
       margin: 30px 30px;
+
+      .answer {
+        @include flex(flex, row, center, center);
+        height: 200px;
+        margin-top: 70px;
+        //margin-left: 15px;
+        @include text($fontFamily, 20px, 400, $textSecondColor);
+        @media screen and (max-width: $maxWidth) {
+          @include text($fontFamily, 15px, 400, $textSecondColor);
+        }
+
+      }
 
       & form {
         width: 100%;

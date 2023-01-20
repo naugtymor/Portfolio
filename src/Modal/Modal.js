@@ -57,18 +57,26 @@ const Modal = (props) => {
                         <span>I am ready to consider it. Send a short description and leave your contacts.</span>
                     </div>
                     <div className={style.modalBody}>
-                        <form onSubmit={sendEmail} ref={form}>
-                            <div className={style.inputBlock}>
-                                <input className={style.modalInput} type="text" name="name" placeholder={"Full Name"}/>
-                                <input className={style.modalInput} type="text" name="email" placeholder={"E-mail"}/>
-                            </div>
-                            <div className={style.inputBlock}>
-                                <input className={style.modalInput} type="text" name="company" placeholder={"Company Name"}/>
-                                <input className={style.modalInput} type="text" name="phone" placeholder={"Phone Number"}/>
-                            </div>
-                            <textarea placeholder={"Your message..."} name="message" cols="30" rows="10"></textarea>
-                            <button type={"submit"}>SEND</button>
-                        </form>
+                        {sendMessage ?
+                            <div className={style.answer}>Thank you, your information has been received!</div>
+                            :
+                            <form onSubmit={sendEmail} ref={form}>
+                                <div className={style.inputBlock}>
+                                    <input className={style.modalInput} type="text" name="name"
+                                           placeholder={"Full Name"}/>
+                                    <input className={style.modalInput} type="text" name="email"
+                                           placeholder={"E-mail"}/>
+                                </div>
+                                <div className={style.inputBlock}>
+                                    <input className={style.modalInput} type="text" name="company"
+                                           placeholder={"Company Name"}/>
+                                    <input className={style.modalInput} type="text" name="phone"
+                                           placeholder={"Phone Number"}/>
+                                </div>
+                                <textarea placeholder={"Your message..."} name="message" cols="30" rows="10"></textarea>
+                                <button type={"submit"}>SEND</button>
+                            </form>
+                        }
                     </div>
                 </div>
             </Fade>
