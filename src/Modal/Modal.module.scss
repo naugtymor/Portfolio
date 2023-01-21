@@ -82,9 +82,9 @@
           @include flex(flex, row, space-between, space-between);
           .errorBlock {
             margin-left: 15px;
-
+            @include text($fontFamily, 16px, 400, red);
             width: 50%;
-            color: red;
+            //color: red;
           }
         }
         .inputBlock {

@@ -18,11 +18,9 @@ const Modal = (props) => {
     };
 
     const valid = async (form) => {
-        debugger
         if (form.name.value.length < 3) {
-            setNameErr("Name require")
+            setNameErr("Name required")
             setError(true)
-            return
         } else {
             setNameErr("")
             setError(false)
@@ -34,6 +32,7 @@ const Modal = (props) => {
             setEmailErr("")
             setError(false)
         }
+        // return
     }
 
     useEffect(() => {
@@ -61,7 +60,7 @@ const Modal = (props) => {
                     </div>
                     <div className={style.modalBody}>
                         {sendMessage ?
-                            <div className={style.answer}>Леша пидорас, хуй ты мне что отправишь:)</div>
+                            <div className={style.answer}>Thank you, your information has been received!</div>
                             :
                             <form onSubmit={sendEmail} ref={form}>
                                 <div className={style.inputBlock}>
