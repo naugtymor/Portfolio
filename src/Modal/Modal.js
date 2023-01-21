@@ -8,6 +8,8 @@ const Modal = (props) => {
 
     const form = useRef();
     const [sendMessage, setSendMessage] = useState(false)
+    const [nameErr, setNameErr] = useState("")
+    const [emailErr, setEmailErr] = useState("")
     const [error, setError] = useState(true)
 
     const sendEmail = (e) => {
@@ -16,19 +18,20 @@ const Modal = (props) => {
     };
 
     const valid = async (form) => {
+        debugger
         if (form.name.value.length < 3) {
-            // setNameErr("Name require")
+            setNameErr("Name require")
             setError(true)
             return
         } else {
-            // setNameErr("")
+            setNameErr("")
             setError(false)
         }
         if (!validator.isEmail(form.email.value)) {
-            // setEmailErr("Invalid email address")
+            setEmailErr("Invalid email address")
             setError(true)
         } else {
-            // setEmailErr("")
+            setEmailErr("")
             setError(false)
         }
     }
@@ -58,7 +61,7 @@ const Modal = (props) => {
                     </div>
                     <div className={style.modalBody}>
                         {sendMessage ?
-                            <div className={style.answer}>Thank you, your information has been received!</div>
+                            <div className={style.answer}>Леша пидорас, хуй ты мне что отправишь:)</div>
                             :
                             <form onSubmit={sendEmail} ref={form}>
                                 <div className={style.inputBlock}>
@@ -66,6 +69,10 @@ const Modal = (props) => {
                                            placeholder={"Full Name"}/>
                                     <input className={style.modalInput} type="text" name="email"
                                            placeholder={"E-mail"}/>
+                                </div>
+                                <div className={style.firstErrorBlock}>
+                                    {nameErr && <div className={style.errorBlock}>{nameErr}</div>}
+                                    {emailErr && <div className={style.errorBlock}>{emailErr}</div>}
                                 </div>
                                 <div className={style.inputBlock}>
                                     <input className={style.modalInput} type="text" name="company"
