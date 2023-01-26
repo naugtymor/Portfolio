@@ -38,11 +38,11 @@
       width: 100%;
 
       & h2 {
-        @include text($fontFamily, 35px, 800, $bgColor);
+        @include text($fontFamily, 35px, 700, $bgColor);
         line-height: 1em;
         margin: 0 0 5px;
         @media screen and (max-width: $maxWidth) {
-          @include text($fontFamily, 32px, 800, $bgColor);
+          @include text($fontFamily, 35px, 700, $bgColor);
         }
       }
 
@@ -130,8 +130,8 @@
           border: 2px solid transparent;
           cursor: pointer;
           display: inline-block;
-          @include text($fontFamily, 18px, 900, $bgColor);
-          //line-height: 22px;
+          @include text($fontFamily, 22px, 700, $bgColor);
+          line-height: 22px;
           padding: 12px 30px;
           margin: 20px 0 0;
           text-transform: uppercase;
